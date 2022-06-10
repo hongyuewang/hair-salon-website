@@ -16,6 +16,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/booking.css" />
   </head>
   <body>
     <!-- Navbar-->
@@ -65,6 +67,68 @@
       </div>
     </nav>
 
-    
+    <h1 class="text-center pt-3">Book an Appointment</h1>
+    <div class="container-fluid pt-3">
+      <form action="" class="ms-5 me-5">
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" />
+          </div>
+          <div class="mb-3 col">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" />
+          </div>
+          <div class="mb-3 col">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="service" class="form-label">What service?</label>
+            <select class="form-select" id="service">
+              <option selected>General appointment</option>
+              <option value="1">Women's Haircut & Style</option>
+              <option value="2">Men's Haircut & Style</option>
+              <option value="3">Hair coloring</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="expert" class="form-label">With whom?</label>
+            <select class="form-select" id="expert">
+              <option selected>Anyone</option>
+              <option value="1">Luke</option>
+              <option value="2">Ben</option>
+              <option value="3">Anakin</option>
+              <option value="4">Leia</option>
+              <option value="5">Padme</option>
+              <option value="6">Sheev</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="date" class="form-label">When?</label>
+            <input type="date" class="form-control" id="date" />
+          </div>
+          <div class="col">
+            <label for="timeslot" class="form-label"><br /></label>
+            <select class="form-select" id="timeslot">
+              <option selected>Anytime</option>
+              <option value="1">9:00am - 10:00am</option>
+              <option value="2">10:00am - 11:00am</option>
+              <option value="3">11:00am - 12:00pm</option>
+              <option value="4">12:00pm - 1:00pm</option>
+              <option value="5">1:00pm - 2:00pm</option>
+              <option value="6">2:00pm - 3:00pm</option>
+              <option value="7">3:00pm - 4:00pm</option>
+              <option value="8">5:00pm - 6:00pm</option>
+              <option value="9">6:00pm - 7:00pm</option>
+              <option value="10">7:00pm - 8:00pm</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
